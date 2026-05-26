@@ -1,0 +1,22 @@
+{
+  "name": "extrava-server",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Barebones API server for ESP32 medical raw data ingestion and processing pipeline",
+  "main": "src/server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mongodb": "^7.2.0",
+    "redis": "^5.12.1"
+  }
+}
